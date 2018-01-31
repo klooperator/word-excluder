@@ -19,6 +19,8 @@ const excluded = [
   "we",
   "they",
   "what",
+  "has",
+  "had",
   "who",
   "me",
   "him",
@@ -36,6 +38,7 @@ const excluded = [
   "theirs",
   "this",
   "that",
+  "have",
   "these",
   "those",
   "who",
@@ -74,6 +77,7 @@ const excluded = [
   "Anything",
   "everybody",
   "another",
+  "nope",
   "each",
   "few",
   "many",
@@ -82,6 +86,7 @@ const excluded = [
   "all",
   "any",
   "anybody",
+  "did",
   "anyone",
   "everyone",
   "everything",
@@ -150,6 +155,7 @@ const excluded = [
   "as soon as",
   "as though",
   "because",
+  "been",
   "before",
   "lest",
   "once",
@@ -174,6 +180,7 @@ const excluded = [
   "Before",
   "Once",
   "Since",
+  "sid",
   "Though",
   "Till",
   "Unless",
@@ -310,6 +317,7 @@ const excluded = [
   "unless",
   "until",
   "when",
+  "add",
   "whenever",
   "where",
   "wherever",
@@ -341,6 +349,10 @@ const excluded = [
   "provided that",
   "so that",
   "than",
-  "as long as"
+  "as long as",
+  "were",
+  "done"
 ];
-export default new Map(excluded);
+module.exports = new Set(excluded);
+
+module.exports.included = new Set(["ad", "up"]);
