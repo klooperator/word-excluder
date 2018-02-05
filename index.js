@@ -30,15 +30,4 @@ const isRealWord = item => {
   return true;
 };
 
-const l = [
-  "ad",
-  "fdsf",
-  "word",
-  "lampa",
-  "adas",
-  "adidas",
-  "dsfds",
-  "has",
-  "were"
-];
-console.log(filterList(l));
+module.exports = filterList;
